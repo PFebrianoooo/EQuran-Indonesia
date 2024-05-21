@@ -29,6 +29,7 @@
 		C645E8852BE654B3009DB3E2 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645E8842BE654B3009DB3E2 /* DetailViewModel.swift */; };
 		C645E8872BE65861009DB3E2 /* SurahDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645E8862BE65861009DB3E2 /* SurahDetailView.swift */; };
 		C645E8892BE659DA009DB3E2 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645E8882BE659DA009DB3E2 /* DismissButton.swift */; };
+		C67361CA2BFCD1AF0096E614 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67361C92BFCD1AF0096E614 /* AudioPlayerViewModel.swift */; };
 		C67D4D522BED26CA00911808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67D4D512BED26CA00911808 /* Assets.xcassets */; };
 		C682ADD52BED2D60002184F0 /* ListDailyPrayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682ADD42BED2D60002184F0 /* ListDailyPrayerView.swift */; };
 		C682ADD72BED3058002184F0 /* DailyPrayerListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682ADD62BED3058002184F0 /* DailyPrayerListRow.swift */; };
@@ -77,6 +78,7 @@
 		C645E8842BE654B3009DB3E2 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		C645E8862BE65861009DB3E2 /* SurahDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahDetailView.swift; sourceTree = "<group>"; };
 		C645E8882BE659DA009DB3E2 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		C67361C92BFCD1AF0096E614 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 		C67D4D512BED26CA00911808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C682ADD42BED2D60002184F0 /* ListDailyPrayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDailyPrayerView.swift; sourceTree = "<group>"; };
 		C682ADD62BED3058002184F0 /* DailyPrayerListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPrayerListRow.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		C62F32932BE5259200050641 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C67361C92BFCD1AF0096E614 /* AudioPlayerViewModel.swift */,
 				C62F32A82BE53D8500050641 /* NetworkingManager.swift */,
 			);
 			path = Utilities;
@@ -482,6 +485,7 @@
 				C62F32AF2BE5406600050641 /* DeveloperPreview.swift in Sources */,
 				C682ADDB2BED36FB002184F0 /* DailyPrayerDataService.swift in Sources */,
 				C682ADD92BED3232002184F0 /* DailyPrayerDetailView.swift in Sources */,
+				C67361CA2BFCD1AF0096E614 /* AudioPlayerViewModel.swift in Sources */,
 				C645E87E2BE6518D009DB3E2 /* DetailSurahDataService.swift in Sources */,
 				C6D1E9EF2BEE0F8A0019B773 /* DailyPrayTestDataService.swift in Sources */,
 				C62F32992BE5263700050641 /* Image.swift in Sources */,

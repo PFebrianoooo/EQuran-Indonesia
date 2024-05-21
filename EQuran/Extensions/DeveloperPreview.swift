@@ -17,6 +17,8 @@ class DeveloperPreview {
     
     static let dailyPrayerTestVm = DailyPrayerTestViewModel()
     
+    static let audioVM = AudioPlayerViewModel()
+    
     static let praySchedule1 = ScheduleModel(prayName: "Subuh", time: "17:00")
     
     static let praySchedule2 = ScheduleModel(prayName: "Ashar", time: "15:00")
@@ -47,6 +49,7 @@ class DeveloperPreview {
         ayahsCount: 3,
         placeBirth: "Madinah",
         meaningAyahs: "Pertolongan",
+        audioFull: ["05":"audiofull"],
         detailAyahs: [
             AyahsDetail(
                 ayahsNumber: 1,

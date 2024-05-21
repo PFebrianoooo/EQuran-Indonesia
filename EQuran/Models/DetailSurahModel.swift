@@ -96,6 +96,7 @@ struct DetailSurahModel: Codable {
     let ayahsCount: Int
     let placeBirth: String
     let meaningAyahs: String
+    let audioFull: [String:String]
     let detailAyahs: [AyahsDetail]
     
     enum CodingKeys: String, CodingKey {
@@ -105,6 +106,7 @@ struct DetailSurahModel: Codable {
         case placeBirth = "tempatTurun"
         case meaningAyahs = "arti"
         case detailAyahs = "ayat"
+        case audioFull
     }
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct HeaderDetailSurah: View {
     
     let surah: DetailSurahModel?
-    
+    @StateObject var audioVM = AudioPlayerViewModel()
     
     var body: some View {
         if let surahDetail = surah {
@@ -35,15 +35,34 @@ struct HeaderDetailSurah: View {
                             }
                         }
                         
-                        HStack {
-                            Text(surahDetail.placeBirth)
+                        VStack(spacing: 8) {
+                            HStack {
+                                Text(surahDetail.placeBirth)
+                                
+                                Spacer()
+                                
+                                Text("• \(surahDetail.ayahsCount) ayat")
+                            }
+                            .font(.subheadline)
+                            .frame(maxWidth: 150, alignment: .leading)
                             
-                            Spacer()
+                            Button {
+                                guard let murrotal = surahDetail.audioFull["05"] else { return }
+                                audioVM.isPlaying ? audioVM.pause() : audioVM.play(urls: murrotal)
+                                
+                            } label: {
+                                HStack {
+                                    Image(systemName: audioVM.isPlaying ? "pause.fill" : "play.fill")
+                                    
+                                    Text(audioVM.isPlaying ? "Pause Murrotal" : "Play Murrotal")
+                                }
+                            }
+                            .font(.subheadline)
+                            .frame(maxWidth: 150, alignment: .center)
+                            .padding(.vertical,2)
+                            .background(Color.theme.accent)
                             
-                            Text("• \(surahDetail.ayahsCount) ayat")
                         }
-                        .font(.subheadline)
-                        .frame(maxWidth: 150, alignment: .leading)
                     }
                     
                     Image.stickerBismillah
