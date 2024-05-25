@@ -10,6 +10,7 @@ import SwiftUI
 struct DailyPrayTest: View {
     
     @StateObject private var vm = DailyPrayerTestViewModel()
+    @StateObject private var audioVM = AudioPlayerViewModel()
     @State private var showAnswerKey: Bool = false
     @State private var showAnimateTimer: Bool = false
     
@@ -132,6 +133,8 @@ extension DailyPrayTest {
                 withAnimation(.easeIn) {
                     vm.refreshDailyPrayer()
                 }
+                audioVM.playLocalSound()
+                
             } label: {
                 ZStack {
                     Image.elementBg

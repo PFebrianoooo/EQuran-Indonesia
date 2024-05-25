@@ -41,6 +41,7 @@
 		C69C5EE32BE920940011B56C /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69C5EE22BE920940011B56C /* DateFormatter.swift */; };
 		C69C5EE82BE94A260011B56C /* DailyPrayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69C5EE72BE94A260011B56C /* DailyPrayerView.swift */; };
 		C6B9C8D82BEF61CC00826A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B9C8D72BEF61CC00826A2D /* LaunchScreen.storyboard */; };
+		C6C3F34D2C023B8900E62C5C /* whoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6C3F34C2C023B8900E62C5C /* whoosh.mp3 */; };
 		C6C4D45D2BE94C63002EA4B8 /* DailyPrayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C4D45C2BE94C63002EA4B8 /* DailyPrayerModel.swift */; };
 		C6CB98E42BE6AEC800EDFF95 /* PrayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB98E32BE6AEC800EDFF95 /* PrayScheduleView.swift */; };
 		C6CB98E62BE6B06600EDFF95 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB98E52BE6B06600EDFF95 /* MenuBarView.swift */; };
@@ -90,6 +91,7 @@
 		C69C5EE22BE920940011B56C /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		C69C5EE72BE94A260011B56C /* DailyPrayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPrayerView.swift; sourceTree = "<group>"; };
 		C6B9C8D72BEF61CC00826A2D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6C3F34C2C023B8900E62C5C /* whoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whoosh.mp3; sourceTree = "<group>"; };
 		C6C4D45C2BE94C63002EA4B8 /* DailyPrayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPrayerModel.swift; sourceTree = "<group>"; };
 		C6CB98E32BE6AEC800EDFF95 /* PrayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayScheduleView.swift; sourceTree = "<group>"; };
 		C6CB98E52BE6B06600EDFF95 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		C62F32842BE5258B00050641 /* EQuran */ = {
 			isa = PBXGroup;
 			children = (
+				C6C3F34B2C023B6800E62C5C /* Sound */,
 				C62F32962BE525A200050641 /* Extensions */,
 				C62F32932BE5259200050641 /* Utilities */,
 				C62F32942BE5259700050641 /* Services */,
@@ -354,6 +357,14 @@
 			path = Launchscreen;
 			sourceTree = "<group>";
 		};
+		C6C3F34B2C023B6800E62C5C /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				C6C3F34C2C023B8900E62C5C /* whoosh.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		C6CB98E12BE6AE6E00EDFF95 /* PraySchedule */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C3F34D2C023B8900E62C5C /* whoosh.mp3 in Resources */,
 				C6B9C8D82BEF61CC00826A2D /* LaunchScreen.storyboard in Resources */,
 				C67D4D522BED26CA00911808 /* Assets.xcassets in Resources */,
 				C62F328D2BE5258D00050641 /* Preview Assets.xcassets in Resources */,

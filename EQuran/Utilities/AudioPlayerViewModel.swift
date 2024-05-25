@@ -13,6 +13,7 @@ class AudioPlayerViewModel: ObservableObject {
     
     @Published var isPlaying: Bool = false
     private var player: AVPlayer?
+    private var avAudio: AVAudioPlayer?
     
     func play(urls: String) {
         guard let url = URL(string: urls) else { return }
@@ -28,5 +29,20 @@ class AudioPlayerViewModel: ObservableObject {
         player?.pause()
         isPlaying = false
     }
+    
+    func playLocalSound() {
+        
+        guard let sound = Bundle.main.url(forResource: "whoosh", withExtension: ".mp3") else { return }
+        
+        do {
+            avAudio = try AVAudioPlayer(contentsOf: sound)
+            avAudio?.play()
+        } catch {
+            print("Error playing local sound")
+        }
+    }
+    
+    
+    
     
 }
